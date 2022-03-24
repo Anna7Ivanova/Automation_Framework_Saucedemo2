@@ -29,7 +29,7 @@ public class TestUtil {
     }
 
     private void setupBrowserDriver(){
-        try (FileInputStream configFile = new FileInputStream("scr/test/resources/config.properties")){
+        try (FileInputStream configFile = new FileInputStream("src/test/resources/config.properties")){
             Properties config = new Properties();
             config.load(configFile);
             url = config.getProperty("urlAddress");
