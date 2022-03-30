@@ -18,7 +18,7 @@ public class JavaScriptExecutor extends TestUtil {
         passwordInput.sendKeys("secret_sauce");
 
         WebElement loginBtn = driver.findElement(By.cssSelector("[value=Login]"));
-        loginBtn.click();// v1 if we can't perform click with mouse, we can do it with java script
+        loginBtn.click();// v1 if we can't perform click with mouse, we can do it with javascript
         //loginBtn.sendKeys(Keys.ENTER);//v2
 
         JavascriptExecutor script = (JavascriptExecutor) driver;
